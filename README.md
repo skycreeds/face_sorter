@@ -1,5 +1,5 @@
 
-# pic_sorter
+# face_sorter
 
 A cli tool to seperate images containing provided face 
 
@@ -11,7 +11,7 @@ A cli tool to seperate images containing provided face
 #pip installation
 
 ```python
-   pip3 install git+https://github.com/skycreeds/pic_sorter.git
+   pip3 install git+https://github.com/skycreeds/face_sorter.git
 ```
 
 ## Usage/Examples
@@ -34,7 +34,7 @@ flags :
 
 #Example
 ```bash
-    pic_sorter --face_pic face.jpeg --folder_in '/sample' --folder_out 'out/' --tolerence 0.3 --encode_resample 2 --location_resample 2
+    face_sorter --face_pic face.jpeg --folder_in '/sample' --folder_out 'out/' --tolerence 0.3 --encode_resample 2 --location_resample 2
 
 ```
 
