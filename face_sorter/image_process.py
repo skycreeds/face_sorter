@@ -18,7 +18,5 @@ def image_load_faces(path:str,num_jitters=1,upsample=1):
     return face_encodings
 
 def face_compare(ref_face,face_encode,tolerance):
-    
      match = fr.compare_faces([ref_face], face_encode,tolerance=tolerance)
-     print(match)
      return match[0]
