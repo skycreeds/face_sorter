@@ -49,7 +49,7 @@ flags :
 
 
 Use tolerence,encode_resample,location_resample while keeping ram in mind.Lower tolerence,higher resampling uses more ram and can crash.
-
+using default will be most advisable.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
