@@ -1,8 +1,12 @@
-
 # face_sorter
 
 A cli tool to seperate images containing provided face 
 
+ <a href="https://github.com/skycreeds/face_sorter/issues">Request Feature</a>
+  </p>
+</p>
+
+![Contributors](https://img.shields.io/github/contributors/skycreeds/face_sorter?color=dark-green) ![Forks](https://img.shields.io/github/forks/skycreeds/face_sorter?style=social) ![Stargazers](https://img.shields.io/github/stars/skycreeds/face_sorter?style=social) ![Issues](https://img.shields.io/github/issues/skycreeds/face_sorter) ![License](https://img.shields.io/github/license/skycreeds/face_sorter) 
 
 
 
