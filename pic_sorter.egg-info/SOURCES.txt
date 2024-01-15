@@ -1,0 +1,11 @@
+setup.py
+pic_sorter/__init__.py
+pic_sorter/__main__.py
+pic_sorter/folder_process.py
+pic_sorter/image_process.py
+pic_sorter.egg-info/PKG-INFO
+pic_sorter.egg-info/SOURCES.txt
+pic_sorter.egg-info/dependency_links.txt
+pic_sorter.egg-info/entry_points.txt
+pic_sorter.egg-info/requires.txt
+pic_sorter.egg-info/top_level.txt

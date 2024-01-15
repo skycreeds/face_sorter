@@ -1,0 +1,2 @@
+[console_scripts]
+pic_sorter = pic_sorter.__main__:main
