@@ -19,7 +19,7 @@ def main():
     #if face_pic is provided
     if args.face_pic:
         if args.tolerence is None:
-            tol=1
+            tol=0.5
         else:
             tol=args.tolerence
         if args.encode_resample is None:
