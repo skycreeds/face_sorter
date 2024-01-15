@@ -10,9 +10,9 @@ def main():
     parser.add_argument('--face_pic', type=str, help='face')
     parser.add_argument('--folder_in', type=str, help='folder to search')
     parser.add_argument('--folder_out',type=str,help='folder for output inages')
-    parser.add_argument('--tolerence',type=str,help='accuracy of recognition(smaller is better but intensive)')
-    parser.add_argument('--encode_resample',type=str,help='times to resample face encodings(lager is better but intensive)')
-    parser.add_argument('--location_resample',type=str,help='times to resample face locations(larger better but intensive)')
+    parser.add_argument('--tolerence',type=float,help='accuracy of recognition(smaller is better but intensive)')
+    parser.add_argument('--encode_resample',type=int,help='times to resample face encodings(lager is better but intensive)')
+    parser.add_argument('--location_resample',type=int,help='times to resample face locations(larger better but intensive)')
     args = parser.parse_args()
     # print(args.face_pic)
     # print(args.folder_in)
@@ -28,7 +28,7 @@ def main():
             jit=1
         else:
             jit=args.encode_resample
-            
+
         if args.location_resample is None:
             up=1
         else:

@@ -3,7 +3,7 @@ import sys
 
 def image_load(path:str,jitter):
     print('image load')
-    image=fr.load_image_file(path)
+    image=fr.load_image_file(path,mode='RGB')
     try:
         image_encoding = fr.face_encodings(image,num_jitters=jitter)[0]
     except IndexError:
