@@ -14,9 +14,7 @@ def main():
     parser.add_argument('--encode_resample',type=int,help='times to resample face encodings(lager is better but intensive)')
     parser.add_argument('--location_resample',type=int,help='times to resample face locations(larger better but intensive)')
     args = parser.parse_args()
-    # print(args.face_pic)
-    # print(args.folder_in)
-    # print(args.folder_out)
+    
     #if face_pic is provided
     if args.face_pic:
         if args.tolerence is None:
@@ -35,7 +33,7 @@ def main():
             up=args.location_resample
 
 
-        print('inside face pic '+args.face_pic)
+        
         #load face
         ref_face=image_load(args.face_pic,jitter=jit)
 
@@ -57,7 +55,7 @@ def main():
             out_dir=os.getcwd()+'/out'
 
         for filename in tqdm(os.listdir(cdir)):
-            print(9999)
+            
             if filename.endswith(".jpg") or filename.endswith(".png")or filename.endswith('.JPG'):
                 face_encode=image_load_faces(cdir+'/'+filename,num_jitters=jit,upsample=up)
                 for face_encoding in face_encode:
