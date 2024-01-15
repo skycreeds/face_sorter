@@ -31,14 +31,14 @@ flags :
 
     --tolerence: accuracy of recognition(smaller is better but intensive) range(0,1) 0.5 is best 
 
-    --encode_resample:times to resample face encodings(lager is better but intensive) integer 
+    --encode_resample:times to resample face encodings(lager is better but intensive) integer, default 1
     
-    --location_resample:times to resample face locations(larger better but intensive) integer
+    --location_resample:times to resample face locations(larger better but intensive) integer, default 1
 ```
 
 #Example
 ```bash
-    face_sorter --face_pic face.jpeg --folder_in '/sample' --folder_out 'out/' --tolerence 0.3 --encode_resample 2 --location_resample 2
+    face_sorter --face_pic face.jpeg --folder_in '/sample' --folder_out 'out/' --tolerence 0.5 --encode_resample 2 --location_resample 2
 
 ```
 
