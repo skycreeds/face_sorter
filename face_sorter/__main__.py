@@ -1,12 +1,12 @@
 import argparse
 import os
 from tqdm import tqdm
-from pic_sorter.image_process import image_load,image_load_faces,face_compare
-from pic_sorter.folder_process import file_copy
+from face_sorter.image_process import image_load,image_load_faces,face_compare
+from face_sorter.folder_process import file_copy
 
 def main():
     
-    parser = argparse.ArgumentParser(description='PIC_sorter')
+    parser = argparse.ArgumentParser(description='face_sorter')
     parser.add_argument('--face_pic', type=str, help='face')
     parser.add_argument('--folder_in', type=str, help='folder to search')
     parser.add_argument('--folder_out',type=str,help='folder for output inages')
